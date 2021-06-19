@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+</head>
+
+<body>
+
+
+  <!--MODAL -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Welcome</h5>
+                <button type="button" class="close  btn btn-danger" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body">
+        <img src="gif.gif" alt="" style="height: 93px; width: 123px; display: block;
+        margin-left: auto;
+        margin-right: auto;">
+                <form>
+                    <div class="form-group">
+                        <p style="font-size: 20px;">Step-1:Just type the ingredient</p>
+                        <p style="font-size: 20px;">Step-2:Tadaa.. and you'll get your answer </p>
+                    </div>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Wanna Cook Don't Know the Recipe? <br> Don't worry solution is here &#128525;</h2>
+        <blockquote>Good Food &#127829; Good Mood &#128512; Good Day &#128526;<br>
+        </blockquote>
+
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter an ingredient..." id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn" style="background-color: red;">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
+        </div>
+      </div>
+
+
+      <div class="meal-details">
+        <!-- recipe close btn -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class="meal-details-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+   
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
