@@ -3,7 +3,7 @@
 This is food related application if anybody wants to cook and they have the common ingredients and they do not know the recipe or more ingredients let say i have cheese but i don't
 know how to make things with the help of cheese so i just need to search for cheese and it will show the foods that cooked with the help of cheese. Similary you can search for any thing.
 
-And this is the api from where i got the data:-  https://www.themealdb.com/api.php.
+And this is the api from where i got the data:-  https://www.themealdb.com/api.php
 For this application i've used vscode IDE.
 
 Here is the url of this application: https://find-your-recipe-here.herokuapp.com/ .
